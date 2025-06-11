@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class = "grid grid-cols-3">
+            <nav class = "col-span-3 bg-blue-600 flex justify-center">
+                <h1 class = "text-white p-3 font-bold">Weather Dashboard</h1>
+            </nav>
+            <article class = "col-span-3 bg-blue-300 grid grid-cols-3 p-3 gap-3">
+                <section class = "col-span-1 p-3">
+                    <label for = "input" class = "font-bold">Enter a City Name</label>
+                    <br>
+                    <input type = "text" id = "input" placeholder = "E.g., New York,London,Tokyo" class = "w-[400px] mt-2 mb-3 p-2">
+                    <br>
+                    <button id = "search" class = "w-[400px] bg-blue-600 text-white p-2">Search</button>
+                    <div class="flex items-center gap-2 w-[400px] mt-3 mb-3">
+                        <hr class="flex-1 border-t border-gray-700" />
+                        <span class="text-gray-800 text-sm">or</span>
+                        <hr class="flex-1 border-t border-gray-700" />
+                    </div>
+                    <button id = "currLoc" class = "w-[400px] text-white bg-gray-500 p-2">Use Current Location</button>
+                </section>
+                <section class = "col-span-2 p-2" id = "second">
+
+                </section>
+            </article>
+        </div>
+        <script src = "javascript.js"></script>
+    </body>
+</html>
